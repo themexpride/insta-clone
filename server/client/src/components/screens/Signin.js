@@ -64,6 +64,10 @@ const Signin = ()=>{
               <h5>
               <Link to="/signup" className="link">Don't have an account yet? Sign Up!</Link>
               </h5>
+              <h6>
+                <Link to="/reset">Forgot password ?</Link>
+              </h6>
+              
             </div>
         </div>
     )
