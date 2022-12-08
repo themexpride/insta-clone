@@ -1,0 +1,22 @@
+{
+  "name": "insta-clone",
+  "version": "2.0.0",
+  "description": "Web application replicating features from the popular application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Rios-Cardenas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "fuse.js": "^6.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "nodemailer": "^6.8.0",
+    "nodemailer-sendinblue-transport": "^2.0.1",
+    "nodemon": "^2.0.20"
+  }
+}
