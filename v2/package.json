@@ -3,7 +3,6 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "start": "node ./server/app.js",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "node server/app && NPM_CONFIG_PRODUCTION=false && node client/app"
   }
 }
