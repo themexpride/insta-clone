@@ -1,4 +1,3 @@
-const { MONGOURI_HSH, JWT_SECRET_HSH, SENDINBLUE_HSH } = require('./encrypted')
 const CryptoJS = require('crypto-js')
 
 module.exports = {
