@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 const { MONGOURI } = require("./keys.js");
 const mainMongo = async () => {
-  await mongoose.connect(MONGOURI);
+  await mongoose.connect(MONGOURI,  {useNewUrlParser: true});
 };
 mainMongo().catch((err) => {
   console.log(err);
