@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && npm run a",
-    "a": "cd ../client && npm run start",
+    "start": "npm run a",
+    "a": "npm run --prefix ../client build",
     "build": "npm install && npm run b",
-    "b": "cd ../server && npm install"
+    "b": "npm --prefix ../client install"
   },
   "author": "Martin Rios-Cardenas",
   "license": "ISC",
