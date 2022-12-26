@@ -18,8 +18,8 @@ mongoose.connection.on("error", (err) => {
   console.log("Error connecting to MongoDB", err);
 });
 
-require("./server/models/user.js");
-require("./server/models/post.js");
+require("./models/user.js");
+require("./models/post.js");
 
 app.use(express.json());
 app.use(require("./routes/auth.js"));
