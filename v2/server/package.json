@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && npm run a",
-    "a": "cd ../client && npm run start"
+    "a": "cd ../client && npm run start",
+    "build": "npm install && npm run b",
+    "b": "cd ../server && npm install"
   },
   "author": "Martin Rios-Cardenas",
   "license": "ISC",
