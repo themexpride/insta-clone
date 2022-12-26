@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && node app",
-    "dev": "nodemon app"
+    "start": "npm install && npm run a",
+    "a": "cd ../client && npm run start"
   },
   "author": "Martin Rios-Cardenas",
   "license": "ISC",
