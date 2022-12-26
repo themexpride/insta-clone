@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken')
 const { JWT_SECRET, SENDINBLUE } = require('../keys.js')
 const nodemailer = require('nodemailer')
 const sendinblueTransport = require('nodemailer-sendinblue-transport')
-const loginVerification = require('../server/middleware/loginVerification.js')
+const loginVerification = require('../middleware/loginVerification.js')
 const User = mongoose.model("User")
 
 
