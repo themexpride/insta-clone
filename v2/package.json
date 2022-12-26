@@ -3,7 +3,7 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "start": "npm run start",
+    "start": "cd server && npm run start",
     "build": "npm run build"
   }
 }
