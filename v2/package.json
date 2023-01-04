@@ -3,7 +3,7 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "start": "echo $NODE_ENV && cd server && npm run start",
-    "build": "npm install --prefix client && npm install --prefix server"
+    "start": "cd server && npm run start",
+    "build": "CI=false && npm install --prefix client && npm install --prefix server"
   }
 }
