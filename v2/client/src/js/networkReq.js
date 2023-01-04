@@ -8,16 +8,19 @@ const host = "https://insta-clone-rvev.onrender.com"
 const appTypeJSON = {
   "Content-Type": "application/json",
 };
-
+const getToken = () => {
+  const token = localStorage.getItem("jwt")
+  return token
+}
 const authorizedUserTokenNoContent = () => {
-  let token = localStorage.getItem("jwt")
+  let token = getToken()
   return {
     "Authorization": "Bearer " + token
   }
 };
 
 const authorizedUserToken = () => {
-  let token = localStorage.getItem("jwt")
+  let token = getToken()
   return {
     "Content-Type": "application/json",
     "Authorization": "Bearer " + token
@@ -157,7 +160,7 @@ export const ImageData = (title, body, image, newPostSuccess) => {
     try {
       const route = "/create-post";
       const method = "post";
-      const headers = authorizedUserToken;
+      const headers = authorizedUserToken();
       const postBody = JSON.stringify({
         title,
         body,
