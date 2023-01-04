@@ -1,4 +1,4 @@
-if (process.env.DEV_ENV === 11) {
+if (process.env.VERCEL_ENV === "production") {
     module.exports = require('./config/prod.js')
 }
 else {
