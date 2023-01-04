@@ -1,4 +1,4 @@
-if (process.env.NODE_DEVV === 11) {
+if (process.env.DEV_ENV === 11) {
     module.exports = require('./config/prod.js')
 }
 else {
