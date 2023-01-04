@@ -1,4 +1,4 @@
 .env
 /node_modules
-/server/.env
-/server/dev.js
+/v2/server/.env
+/v2/server/config/dev.js
