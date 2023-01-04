@@ -26,13 +26,6 @@ app.use(require("./routes/auth.js"));
 app.use(require("./routes/posting.js"));
 app.use(require("./routes/user.js"));
 
-app.use(express.static('../client/build'));
-const path = require('path');
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'client', 'build', 'index.html'))
-})
-
-
 app.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });

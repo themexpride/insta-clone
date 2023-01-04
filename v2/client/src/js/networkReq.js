@@ -24,7 +24,8 @@ const authorizedUserToken = () => {
 
 async function PostData(route, method, headers, body) {
   try {
-    const fetchedData = await fetch(route, {
+    const newRoute = process.env.CLIENT_HOST + route
+    const fetchedData = await fetch(newRoute, {
       method,
       headers,
       body,
