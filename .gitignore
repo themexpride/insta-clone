@@ -2,3 +2,5 @@
 /node_modules
 /v2/server/.env
 /v2/server/config/dev.js
+/v2/client/node_modules
+/v2/server/node_modules
