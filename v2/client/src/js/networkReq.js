@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 // eslint-disable-next-line
 const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+const host = "https://insta-clone-rvev.onrender.com/"
+
 const appTypeJSON = {
   "Content-Type": "application/json",
 };
@@ -24,7 +26,7 @@ const authorizedUserToken = () => {
 
 async function PostData(route, method, headers, body) {
   try {
-    const newRoute = process.env.CLIENT_HOST + route
+    const newRoute = host + route
     const fetchedData = await fetch(newRoute, {
       method,
       headers,
