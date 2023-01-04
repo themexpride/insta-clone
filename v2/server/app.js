@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -22,6 +22,7 @@ require("./models/user.js");
 require("./models/post.js");
 
 app.use(express.json());
+app.use(cors());
 app.use(require("./routes/auth.js"));
 app.use(require("./routes/posting.js"));
 app.use(require("./routes/user.js"));
